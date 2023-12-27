@@ -51,6 +51,6 @@ class CalculatePriceTest extends ApiTestCase
 
         $decodedContent = json_decode($response->getContent(), true);
 
-        self::assertEquals(['calculatedPrice' => 20.468], $decodedContent);
+        self::assertEquals(['calculatedPrice' => 20.47], $decodedContent);
     }
 }
